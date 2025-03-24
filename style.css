@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.divuno {
+    padding: 15px 0;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.divuno__titulo {
+    color: #8b4f39;
+    font-family: "Caveat", cursive;
+    font-weight: bold;
+    font-size: 68px;
+    padding-right: 430px;
+}
+
+.divuno__boton {
+    padding-right: 30px;
+    display:flex;
+}
+
+.divuno__boton__buscar {
+    padding: 7px 50px 7px 7px;
+    border: 2px solid #8b4f39;
+    border-radius: 15px 0 0 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.divuno__boton__icono {
+    border: 1px solid #8b4f39;
+}
+
+.divuno__figura {
+    padding-right: 75px;
+    display: flex;
+    gap: 13px;
+}
+
+.divuno__figura__icono {
+    width: 30px;
+    height: 30px;
+}
+
+.divdos {
+    background-color: #c0aea2;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.divdos__menu {
+    display: flex;
+    gap: 200px;
+}
+
+.divdos__menu__enlace {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.divtres {
+    height: 45vh;
+    color:#FFFFFF;
+    background-image: url("./assets/portada.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+
+.divtres__textouno {
+    font-size: 30px;
+    font-weight: bold;
+    align-self: end;
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+}
+
+.divtres__textodos {
+    font-size: 30px;
+    font-weight: bold;
+    align-self: start;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.divtres__textotres {
+    font-size: 16px;
+    font-style: italic;
+    grid-column: 2 / 5;
+    grid-row: 4 / 5;
+}
+
+main {
+    width: 100%;
+}
+
+.seccuno {
+    width: 100%;
+    padding: 45px 30px 10px 30px;
+}
+
+.seccuno__titulo, .seccdos__titulo, .secctres__titulo {
+    color: #a04040;
+    font-weight: bold;
+    font-size: 18px;
+}
+    
+.seccuno__libro {
+    width: 100%;
+    padding: 18px 20px 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 110px;
+}
+
+.librouno, .librodos {
+    width: 190px;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.librouno img, .librodos img {
+    width: 150px;
+    height: 245px;
+    object-fit: cover;
+}
+
+.librouno h3, .librodos h3 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 15px;
+}
+
+.librouno p, .librodos p {
+    font-size: 13px;
+}
+
+.librouno a, .enlace {
+    color:#FFFFFF;
+    font-size: 10px;
+    background-color: #a04040;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.seccdos {
+    width: 100%;
+    padding: 45px 30px 60px 30px;
+}
+
+.seccdos__libro {
+    width: 100%;
+    padding: 18px 20px 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 190px;
+    overflow: hidden;
+    overflow-x: scroll;
+    scroll-snap-align: center;
+    scroll-snap-type: x mandatory;
+}
+
+.precio {
+    color:#a04040;
+    font-size: 14px;
+}
+
+.precio__enlace {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.secctres {
+    width: 100%;
+    height: 60vh;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.secctres__textos {
+    width: 50vw;
+    padding: 50px 90px 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.secctres__textos p {
+    font-size: 17px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.secctres__textos .destacado {
+    color:#a04040;
+    font-weight: bold;
+    text-align: center;
+}
+
+.secctres__marco {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secctres__marco__foto {
+    width: 680px;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secctres__marco__foto img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.pie {
+    width: 100%;
+    padding: 15px;
+    background-color: #c0aea2;
+    color:#FFFFFF;
+    font-size: 16px;
+    display: grid;
+    gap: 5px 40px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 370px 50px;
+}
+
+.pie h4 {
+    color:#FFFFFF;
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 7px;
+    border-bottom: 2.5px solid #FFFFFF;
+}
+
+.pieuno {
+    text-align: justify;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.pieuno__texto, .piedos__texto {
+    padding-top: 5px;
+}
+
+.pieuno__contacto {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 10px
+}
+
+.pieuno__rrss {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+    justify-content: center;
+}
+
+.pieuno__rrss img {
+    width: 35px;
+    height: 35px;
+}
+
+.piedos {
+    text-align: justify;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.piedos ul {
+    padding-top: 5px;
+    list-style-type: none;
+}
+
+.piedos a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.pietres {
+    text-align: justify;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.pietres__boton {
+    display: flex;
+}
+
+.pietres__boton__email {
+    padding: 5px 320px 5px 5px;
+    border: 2px solid #8b4f39;
+    font-family: "Poppins", sans-serif;
+}
+
+.pietres__boton__enviar {
+    padding: 6px 20px 6px 10px;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    background-color: #a04040;
+    border: none;
+}
+
+.piecuatro {
+    display: grid;
+    align-items: center;
+    text-align:center;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
